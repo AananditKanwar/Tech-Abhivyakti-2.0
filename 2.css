@@ -32,6 +32,7 @@ body{
     min-height: 100vh;
     background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
     font-size: 16px;
+    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: var(--blue-dark);
@@ -92,7 +93,34 @@ section{
 .align-items-center{
     align-items: center;
 }
+.hidden{
+    display: none !important;
+}
+.sec-padding{
+    padding: 80px 0;
+}
+/*-- Section Title --*/
+.section-title{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-title h2{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
 /*-- Custom scrollbar --*/
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
 
 /*-- Buttons --*/
 .btn{
@@ -141,7 +169,7 @@ section{
 .home-img{
     width: 50%;
     padding: 15px;
-}
+}  
 .home-text p{
     font-size: 18px;
 }
@@ -170,4 +198,40 @@ section{
 .home-img .img-box img{
     width: 100%;
     border-radius: 50%;
+}
+
+.about-img{
+    width: 40%;
+    padding: 0 15px;
+}
+.about-text{
+    width: 60%;
+    padding: 0 15px;
+}
+.about-img .img-box{
+    background-color: var(--white-alpha-25);
+    max-width: 380px;
+    border: 1px solid var(--white-alpha-40);
+    margin: auto;
+    border-radius: 10px;
+}
+.about-img .img-box img{
+    width: 100%;
+}
+.about-text h3{
+    text-transform: capitalize;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.about-text .skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-text .skill-item{
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    padding: 5px 15px;
+    text-transform: capitalize;
+    margin: 0 10px 10px 0;
+    border-radius: 25px;
 }
