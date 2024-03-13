@@ -228,36 +228,25 @@
             <div class="row">
                 <div class="section-title">
                     <h2>Contact Me</h2>
-                </div>  
-            </div>
-            <div class="row">
-                <div class="contact-form">
-                    <form>
-                        <div class="row">
-                            <div class="input-group">
-                                <input type="text" placeholder="Your Name" class="input-control" required>
-                            </div>
-                            <div class="input-group">
-                                <input type="email" placeholder="email" class="input-control" required>
-                            </div>
-                            <div class="input-group">
-                                <textarea name="Message" cols="30" rows="10" placeholder="Your E-mail"></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <button type="submit" class="btn">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
                 </div>
-                <div class="contact-info">
-                   <div class="contact-info-item">
-                        <h3>Email</h3>
-                        <p>kanwaraananditkatoch@gmail.com</p>
-                   </div> 
-                    <div class="contact-info-item">
-                        <h3>Email</h3>
-                        <p>kanwaraananditkatoch@gmail.com</p>
-                    </div> 
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-paper-plane"></i>kanwaraananditkatoch@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 7876697241</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aanandit-kanwar-b0a237291/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AananditKanwar"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.hackerrank.com/profile/kanwaraananditk1"><i class="fa-brands fa-hackerrank"></i></a>
+                        <a href="https://discordapp.com/users/xenon__entity"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" class="input-control" name="Name" placeholder="Your Name" required>
+                        <input type='email' class="input-control" name="email" placeholder="Your E-mail" required>
+                        <textarea name="Message" class="input-control" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id='msg'></span>
                 </div>
             </div>
         </div>
