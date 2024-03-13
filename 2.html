@@ -9,7 +9,7 @@
 <body>
 
     <!--main start-->
-    <div class="main">
+    <div class="main hidden">
         <!--home start-->
         <section class="home-section align-items-center hidden">
             <div class="container">
@@ -32,7 +32,7 @@
         <!--home end-->
         
         <!-- About Section Start-->
-        <section class="about-section sec-padding">
+        <section class="about-section sec-padding hidden">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -119,13 +119,129 @@
                             </div>
                         </div>
                         <!-- Experience end-->
+
+                        <a href="#" class="btn">Download CV</a>
+                        <a href="#" class="btn">Conatct Me</a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- About Section End-->
+        
+        <!-- Portfolio Section Start-->
+        <section class="portfolio-section sec-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>My Projects</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Project Items Start-->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./images/vishnu-mohanan-AcTlEUJJEIg-unsplash.jpg" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">Path-finding Robot</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Use of Atmel AtMega-8 with IR sensors to develop autonomous 
+                                systems that seamlessly navigate through designated paths.
+                                This project focuses on building an autonomous robot that navigates 
+                                a predefined path. Sensors like cameras will guide 
+                                the robot, while a microcontroller translates this information into 
+                                movement commands for the motors. The project entails designing the 
+                                robot's structure, integrating sensors and motors, and developing 
+                                control software. This journey offers valuable insights into robotics, 
+                                electronics, and programming, with potential applications in automated 
+                                tasks and educational platforms.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>6 Jun, 2019</span></li>
+                                    <li>Technologies Used - <span>C#, Atmel Studio</span></li>
+                                    <li>Role - <span>Project Assistant</span></li>
+                                    <li>Documentation - <span><a href="https://circuitdigest.com/microcontroller-projects/line-follower-robot-using-avr-microcontroller-atmega16">view content</a></span></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Items End-->
+                    <!-- Project Items Start-->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./images/Screenshot 2023-11-13 203440.png" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">Personal Resume Page</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>This project demonstrates proficiency in front-end development  
+                                    and web design principles. It effectively highlights technical skills while creating a user-friendly 
+                                    platform to showcase experience and qualifications. This project helps display professional 
+                                    achievements and experiences in a visually compelling way</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>25 Sep, 2023</span></li>
+                                    <li>Technologies Used - <span>HTML, CSS, Javascript</span></li>
+                                    <li>Role - <span>Web Developer</span></li>
+                                    <li>View Online - <span><a href="https://github.com/AananditKanwar/FEE-1-Project/tree/main/FEE%20-1">view content</a></span></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Items End-->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./images/Screenshot 2024-03-13 081844.png" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">Open-Source Emulator Vita3K</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Vita3K is the world's first functional experimental open-source 
+                                    PlayStation Vita emulator for Windows, Linux, macOS and Android. 
+                                    My role in the team was actively testing latest releases of Vita3K 
+                                    with regular error-reporting to developers.
+                                </p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>13 Sep, 2023</span></li>
+                                    <li>Technologies Used - <span>Github</span></li>
+                                    <li>Role - <span>App Tester</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Items End-->
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section End-->
     </div>
+<!-- Main End-->
+
+<!-- Portfolio popup start-->
+<div class="portfolio-popup">
+    <div class="pp-inner">
+        <div class="pp-content">
+           <div class="pp-header">
+                <button type="button" class="btn pp-close"><i class="fa fa-times"></i></button>
+                <div class="pp-thumbnail">
+                    <img src="images/Screenshot 2024-03-13 081844.png" alt="pp-thumbnail">
+                </div>
+           </div> 
+        </div>
+    </div>
+</div>
+<!-- Portfolio popup end-->
 
     <script src="./script.js"></script>    
+    <script src="https://kit.fontawesome.com/883d459486.js" crossorigin="anonymous"></script>
 </body>
 </html>
