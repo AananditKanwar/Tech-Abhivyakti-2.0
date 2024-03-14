@@ -1,3 +1,7 @@
+
+
+/*toggle nav functionality*/
+
 /*About tab functionality */
 const tabsContainer = document.querySelector(".about-tabs"),
 aboutSection = document.querySelector(".about-section");
