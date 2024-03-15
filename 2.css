@@ -199,6 +199,71 @@ button{
         opacity: 1;
     }
 }
+@keyframes zoomInOut{
+    0%,100%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+}
+@keyframes bounceTop{
+    0%,100%{
+        transform: translateY(-55px);
+    }
+    50%{
+        transform: translateY(0px);
+    }  
+}
+/*bg styles start*/
+.bg-circles{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    max-width: 1200px;
+    width: calc(100% - 30px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bg-circles div{
+    position: absolute;
+    border-radius: 50%;
+}
+.bg-circles .circle1{
+    height: 60px;
+    width: 60px;
+    background-color: var(--blue);
+    left: 5%;
+    top: 10%;
+    opacity: 0.3;
+    animation: zoomInOut 8s linear infinite;
+}
+.bg-circles .circle2{
+    height: 80px;
+    width: 80px;
+    background-color: var(--main-color);
+    left: 30%;
+    top: 50%;
+    opacity: 0.4;
+    animation: bounceTop 5s ease-in-out infinite;
+}
+.bg-circles .circle3{
+    height: 120px;
+    width: 120px;
+    background-color: var(--white);
+    top: 40%;
+    right: -60px;
+    opacity: 0.6;
+}
+.bg-circles .circle4{
+    height: 50px;
+    width: 50px;
+    background-color: var(--orange);
+    top: 80%;
+    left: -35px;
+    opacity: 0.6;
+}
+/*bg styles end*/
 /*Header styling*/
 .header{
     position: absolute;
