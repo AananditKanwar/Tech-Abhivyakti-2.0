@@ -1,7 +1,37 @@
 
 
 /*toggle nav functionality*/
+const navToggler = document.querySelector(".nav-toggle");
+navToggler.addEventListener("click", () => {
+    hideSection();
+    toggleNavbar();
+    document.body.classList.toggle("hide-scrolling");
+});
+function hideSection(){
+    document.querySelector("section.active").classList.toggle("fade-out");
+}
+function toggleNavbar(){
+    document.querySelector(".header").classList.toggle("active");
+}
 
+/* Active section toggling */
+document.addEventListener("click", (e) =>{
+    if(e.target.classList.contains("link-item") && e.target.hash !== ""){
+        if(e.target.classList.contains("nav-item")){
+            toggleNavbar();
+        }
+        else{
+            hideSection();
+            document.body.classList.add("hide-scrolling");
+        }
+        setTimeout(() =>{
+            document.querySelector("section.active").classList.remove("active","fade-out");
+            document.querySelector(e.target.hash).classList.add("active");
+            window.scrollTo(0,0);
+            document.body.classList.remove("hide-scrolling");
+        }, 500);
+    }
+});
 /*About tab functionality */
 const tabsContainer = document.querySelector(".about-tabs"),
 aboutSection = document.querySelector(".about-section");
