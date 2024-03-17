@@ -79,3 +79,21 @@ function portfolioItemDetails(portfolioItem){
     document.querySelector(".pp-body").innerHTML= 
     portfolioItem.querySelector(".portfolio-item-details").innerHTML;    
 }
+
+/*Form*/
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz3MhdKKGtwAl4GPCtKnaafhnMXAxG4cnR_egR3C6InO8gEyFHqJ841uvv-Oh6aduigVQ/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById('msg')
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
