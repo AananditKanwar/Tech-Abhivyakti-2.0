@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- Page loading ani start-->
+    <div class="page-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- Page loading ani end-->
+    
+    <!--bg ani start-->
+    <div class="bg-circles">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    </div>
+    <!--bg ani end-->
+    <!--main start-->
+    <div class="main hidden">
+        <!--Header start-->
+        <header class="header">
+            <div class="container">
+                <div class="row flex-end">
+                    <button type="button" class="nav-toggle">
+                        <span></span>
+                    </button>
+                    <nav class="nav">
+                        <div class="nav-inner">
+                            <ul>
+                                <li><a href="#home" class="nav-item link-item">Home</a></li>
+                                <li><a href="#about" class="nav-item link-item">About</a></li>
+                                <li><a href="#portfolio" class="nav-item link-item">Portfolio</a></li>
+                                <li><a href="#contact" class="nav-item link-item">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--Header end-->
+        <!--home start-->
+        <section class="home-section align-items-center" id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="home-text">
+                        <p>Hello, I'm</p>
+                        <h1>Aanandit Kanwar<h1>
+                        <h2>CSE Student<h2>
+                        <a href="#about" class="btn link-item">more about me</a>
+                        <a href="#portfolio" class="btn link-item">portfolio</a>
+                    </div>
+                    <div class="home-img">
+                        <div class="img-box">        
+                            <img src="./images/sample.jpg" alt="profile-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--home end-->
+        
+        <!-- About Section Start-->
+        <section class="about-section sec-padding" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-img">
+                        <div class="img-box">
+                            <img src="./images/sample.jpg" alt="about img">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>I am a passionate coder with a penchant for problem solving. 
+                        I am highly interested in studying history of human civilizations, 
+                        European royals and wars of the olden days. I have a passion of fiddling 
+                        with hardware components and understanding how they work. I also like to 
+                        keep myself up to date with trends of the automotive industry and motorsports. 
+                        Alongside my hobbies, I am currently delving into the fascinating world of coding 
+                        and hardware emulation.</p>
+                        <h3>Skills</h3>
+                        <div class="skills">
+                            <div class="skill-item">HTML5</div>
+                            <div class="skill-item">CSS3</div>
+                            <div class="skill-item">Javascript</div>
+                            <div class="skill-item">Bootstrap</div>
+                            <div class="skill-item">Python</div>
+                            <div class="skill-item">C</div>
+                            <div class="skill-item">C++</div>
+                            <div class="skill-item">App Development</div>
+                        </div>
+                        
+                        <div class="about-tabs">
+                            <button type="button" class="tab-item active" data-targets="#education">Education</button>
+                            <button type="button" class="tab-item" data-targets="#experience">Experience</button>
+                        </div>
+
+                        <!-- Education Start-->
+                        <div class="tab-content active" id="education">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="date">2023 - Present</span>
+                                    <h4>B.E. CSE - <span>Chitkara Univerity</span></h4>
+                                    <p></p>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <span class="date">2016 - 2022</span>
+                                    <h4>High School Education - <span>Aadhunik Public School</span></h4>
+                                    <p></p>
+                                </div>
+                            
+                            </div>
+                        </div>  
+                        <!-- Education End-->
+                    
+                        <!-- Experience start-->
+                        <div class="tab-content" id="experience">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="date">May 2019-June 2019</span>
+                                    <h4>Path-finding Robot</h4>
+                                    <p>Worked on a Robotics project at Aadhunik Public School. 
+                                    The project concept was a working prototype of a path finding
+                                    robot with 8-bit AVR RISC-based microcontroller. Scored P2 overall 
+                                    in the North Zone.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">May 2019-June 2019</span>
+                                    <h4>Path-finding Robot</h4>
+                                    <p>Worked on a Robotics project at Aadhunik Public School. 
+                                    The project concept was a working prototype of a path finding
+                                    robot with 8-bit AVR RISC-based microcontroller. Scored P2 overall 
+                                    in the North Zone.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">May 2019-June 2019</span>
+                                    <h4>Path-finding Robot</h4>
+                                    <p>Worked on a Robotics project at Aadhunik Public School. 
+                                    The project concept was a working prototype of a path finding
+                                    robot with 8-bit AVR RISC-based microcontroller. Scored P2 overall 
+                                    in the North Zone.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Experience end-->
+                        <a href="./cv.pdf" target="_blank" class="btn">Download CV</a>
+                        <a href="#contact" class="btn link-item">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">My Services</h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Web Design</h2>
+                            <p>Proficient in creating engaging and user-friendly digital experiences through thoughtful design and efficient coding.</p>
+                            <a href="https://www.coursera.org/articles/web-designer">Learn more</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-crop"></i>
+                            <h2>UI/UX Design</h2>
+                            <p>Versatile UI/UX that helps in transforming complex ideas into seamless and visually appealing user interfaces.</p>
+                            <a href="https://www.freecodecamp.org/news/ui-ux-design-guide/">Learn more</a>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-app-store-ios"></i>
+                            <h2>Design Thinking Expert</h2>
+                            <p>Innovative design thinker adept at leveraging empathy, ideation, and prototyping to solve complex problems, fostering creative solutions.</p>
+                            <a href="https://www.coursera.org/programs/design-year-1-xdgx3/specializations/uva-darden-design-thinking?collectionId=xqYsl">Learn more</a>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- About Section End-->
+        
+        <!-- Portfolio Section Start-->
+        <section class="portfolio-section sec-padding" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>My Projects</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Project Items Start-->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./images/vishnu-mohanan-AcTlEUJJEIg-unsplash.jpg" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">Path-finding Robot</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Use of Atmel AtMega-8 with IR sensors to develop autonomous 
+                                systems that seamlessly navigate through designated paths.
+                                This project focuses on building an autonomous robot that navigates 
+                                a predefined path. Sensors like cameras will guide 
+                                the robot, while a microcontroller translates this information into 
+                                movement commands for the motors. The project entails designing the 
+                                robot's structure, integrating sensors and motors, and developing 
+                                control software. This journey offers valuable insights into robotics, 
+                                electronics, and programming, with potential applications in automated 
+                                tasks and educational platforms.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>6 Jun, 2019</span></li>
+                                    <li>Technologies Used - <span>C#, Atmel Studio</span></li>
+                                    <li>Role - <span>Project Assistant</span></li>
+                                    <li>Documentation - <span><a href="https://circuitdigest.com/microcontroller-projects/line-follower-robot-using-avr-microcontroller-atmega16">view content</a></span></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Items End-->
+                    <!-- Project Items Start-->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./images/Screenshot 2023-11-13 203440.png" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">Personal Resume Page</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>This project demonstrates proficiency in front-end development  
+                                    and web design principles. It effectively highlights technical skills while creating a user-friendly 
+                                    platform to showcase experience and qualifications. This project helps display professional 
+                                    achievements and experiences in a visually compelling way</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>25 Sep, 2023</span></li>
+                                    <li>Technologies Used - <span>HTML, CSS, Javascript</span></li>
+                                    <li>Role - <span>Web Developer</span></li>
+                                    <li>View Online - <span><a href="https://github.com/AananditKanwar/FEE-1-Project/tree/main/FEE%20-1">view content</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Items End-->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./images/mohammad-rahmani-Hb-WIlu_VYM-unsplash.jpg" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">Open-Source Emulator Vita3K</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Vita3K is the world's first functional experimental open-source 
+                                    PlayStation Vita emulator for Windows, Linux, macOS and Android. 
+                                    My role in the team was actively testing latest releases of Vita3K 
+                                    with regular error-reporting to developers.
+                                </p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>13 Sep, 2023</span></li>
+                                    <li>Technologies Used - <span>Github</span></li>
+                                    <li>Role - <span>App Tester</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Items End-->
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section End-->
+    <!-- Contact section start-->
+    <section class="contact-section sec-padding" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-paper-plane"></i>kanwaraananditkatoch@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 7876697241</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aanandit-kanwar-b0a237291/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AananditKanwar"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.hackerrank.com/profile/kanwaraananditk1"><i class="fa-brands fa-hackerrank"></i></a>
+                        <a href="https://discordapp.com/users/xenon__entity"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" class="input-control" name="Name" placeholder="Your Name" required>
+                        <input type='email' class="input-control" name="E-mail" placeholder="Your E-mail" required>
+                        <textarea name="Message" class="input-control" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id='msg'></span>
+                </div>
+            </div>
+            <div class="testimonials">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="title">Testimonials</h2>
+                    </div>
+                    <div class="swiper testimonials-content js-testimonials-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./images/pexels-royal-anwar-450214.jpg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">John Spielberg</h3>
+                                        <span class="job">Web Developer</span>
+                                    </div>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe 
+                                    eos asperiores quo optio doloremque animi quis impedit reprehenderit 
+                                    consequuntur quaerat.</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./images/pexels-karolina-grabowska-4491476.jpg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">John Spielberg</h3>
+                                        <span class="job">Web Developer</span>
+                                    </div>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe 
+                                    eos asperiores quo optio doloremque animi quis impedit reprehenderit 
+                                    consequuntur quaerat.</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./images/pexels-andrea-piacquadio-3778680.jpg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">John Spielberg</h3>
+                                        <span class="job">Web Developer</span>
+                                    </div>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe 
+                                    eos asperiores quo optio doloremque animi quis impedit reprehenderit 
+                                    consequuntur quaerat.</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./images/pexels-andrea-piacquadio-3785104.jpg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">John Spielberg</h3>
+                                        <span class="job">Web Developer</span>
+                                    </div>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe 
+                                    eos asperiores quo optio doloremque animi quis impedit reprehenderit 
+                                    consequuntur quaerat.</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./images/pexels-andrea-piacquadio-3778680.jpg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">John Spielberg</h3>
+                                        <span class="job">Web Developer</span>
+                                    </div>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe 
+                                    eos asperiores quo optio doloremque animi quis impedit reprehenderit 
+                                    consequuntur quaerat.</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination js-testimonials-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section end-->
+    
+    </div>
+<!-- Main End-->
+
+<!-- Portfolio popup start-->
+<div class="portfolio-popup">
+    <div class="pp-inner">
+        <div class="pp-content">
+           <div class="pp-header">
+                <button type="button" class="btn pp-close"><i class="fa fa-times"></i></button>
+                <div class="pp-thumbnail">
+                    <img src="images/Screenshot 2024-03-13 081844.png" alt="pp-thumbnail">
+                </div>
+                <h3>Open-Source Emulator Vita3K</h3>
+           </div> 
+           <div class="pp-body">
+                <div class="description">
+                    <p>Vita3K is the world's first functional experimental open-source 
+                        PlayStation Vita emulator for Windows, Linux, macOS and Android. 
+                        My role in the team was actively testing latest releases of Vita3K 
+                        with regular error-reporting to developers.
+                    </p>
+                </div>
+                <div class="general-info">
+                    <ul>
+                        <li>Created - <span>13 Sep, 2023</span></li>
+                        <li>Technologies Used - <span>Github</span></li>
+                        <li>Role - <span>App Tester</span></li>
+                    </ul>
+                </div>
+<!---->    </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio popup end-->
+
+    <script src="./script.js"></script>    
+    <script src="https://kit.fontawesome.com/883d459486.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+       const swiper = new Swiper('.js-testimonials-slider', {
+            grabCursor: true,
+            spaceBetween:30,
+            pagination:{
+                el:'js-testimonials-pagination',
+                clickable: true
+            },
+            breakpoints:{
+                767:{
+                    slidesPerView: 2
+                }
+            }
+       });
+    </script>
+</body>
+</html>
