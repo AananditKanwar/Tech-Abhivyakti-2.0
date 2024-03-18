@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- Page loading ani start-->
@@ -284,7 +285,7 @@
         </section>
         <!-- Portfolio Section End-->
     <!-- Contact section start-->
-    <section class="contact-section sec-padding" id="contact">
+    <section class="contact-section sec-padding active" id="contact">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -308,6 +309,113 @@
                         <button type="submit" class="btn">Submit</button>
                     </form>
                     <span id='msg'></span>
+                </div>
+            </div>
+            <div class="testimonials">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="title">Testimonials</h2>
+                    </div>
+                    <div class="swiper testimonials-content js-testimonials-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./images/pexels-royal-anwar-450214.jpg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">John Spielberg</h3>
+                                        <span class="job">Web Developer</span>
+                                    </div>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe 
+                                    eos asperiores quo optio doloremque animi quis impedit reprehenderit 
+                                    consequuntur quaerat.</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./images/pexels-karolina-grabowska-4491476.jpg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">John Spielberg</h3>
+                                        <span class="job">Web Developer</span>
+                                    </div>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe 
+                                    eos asperiores quo optio doloremque animi quis impedit reprehenderit 
+                                    consequuntur quaerat.</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./images/pexels-andrea-piacquadio-3778680.jpg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">John Spielberg</h3>
+                                        <span class="job">Web Developer</span>
+                                    </div>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe 
+                                    eos asperiores quo optio doloremque animi quis impedit reprehenderit 
+                                    consequuntur quaerat.</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./images/pexels-andrea-piacquadio-3785104.jpg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">John Spielberg</h3>
+                                        <span class="job">Web Developer</span>
+                                    </div>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe 
+                                    eos asperiores quo optio doloremque animi quis impedit reprehenderit 
+                                    consequuntur quaerat.</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="info">
+                                    <img src="./images/pexels-andrea-piacquadio-3778680.jpg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">John Spielberg</h3>
+                                        <span class="job">Web Developer</span>
+                                    </div>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe 
+                                    eos asperiores quo optio doloremque animi quis impedit reprehenderit 
+                                    consequuntur quaerat.</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination js-testimonials-pagination"></div>
                 </div>
             </div>
         </div>
@@ -351,5 +459,21 @@
 
     <script src="./script.js"></script>    
     <script src="https://kit.fontawesome.com/883d459486.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+       const swiper = new Swiper('.js-testimonials-slider', {
+            grabCursor: true,
+            spaceBetween:30,
+            pagination:{
+                el:'js-testimonials-pagination',
+                clickable: true
+            },
+            breakpoints:{
+                767:{
+                    slidesPerView: 2
+                }
+            }
+       });
+    </script>
 </body>
 </html>
