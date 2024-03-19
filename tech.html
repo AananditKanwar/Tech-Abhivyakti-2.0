@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Team</title>
+    <style>
+        
+        .d {
+            width: 500px;
+            display: inline-block;
+        }
+        nav a:hover {
+            color: black !important;
+        }
+        .c {
+
+            overflow-y: auto;
+            max-height: calc(100vh - 20px); 
+        }
+        .box
+        {
+           width: 250px;
+           height: 300px;
+           border: 2px solid black; 
+           margin-right: 60px;
+           display: inline-block;
+           overflow-y: auto;
+        }
+        .i
+        {
+            border-radius: 90px;
+            height: 60px;
+        }
+        .image-container {
+  position: relative;
+  display: inline-block; }
+  .button
+         {
+     background-color: rgb(242, 109, 131);
+  border: none;
+  color: white;
+  padding: 4px 12px;
+  text-align: center;
+  font-size: 15.5px;
+  margin: 4px 106px;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.button:hover {opacity: 0.4}
+
+.overlay-text {
+  position: absolute;
+  top: 50%; 
+  left: 20%;
+  transform: translate(-50%, -50%); 
+  color: rgb(7, 7, 7); 
+  font-size: 24px; 
+  padding: 10px; 
+  display: inline-block;
+}
+.overlay-text:nth-child(1) {
+    left: 0;
+    margin-left: 2px; /* Adjust according to your layout */
+}
+
+.overlay-text:nth-child(2) {
+    left: calc(20px + 40%); /* Adjust according to your layout */
+}
+
+.overlay-text:nth-child(3) {
+    left: calc(40px + 60%); /* Adjust according to your layout */
+}
+
+.overlay-text:nth-child(4) {
+    left: calc(60px + 80%); /* Adjust according to your layout */
+}
+.contact
+{
+    background-color: black;
+    color: white;
+    height: 390px;
+}
+.details
+{
+    margin-left: 270px;
+    display: flexbox;
+}
+    </style>
+
+<script src="xlsx.full.min.js"></script>
+
+
+
+
+</head>
+<body style="background-color:rgb(248, 215, 220);">
+    <div>
+        <div class="d">
+            <img src="me4.jpg" style="border-radius: 100px; margin-left: 130px; margin-top:2px; height: 200px;">
+            <img src="ar.jpg" style="border-radius: 120px;margin-left: 130px; margin-top: 20px;height: 200px;">
+            <img src="sample.jpg" style="border-radius: 120px;margin-left: 130px; margin-top: 20px;width: 200px; height: 200px;">
+        </div>
+        <div style="display: inline-block;background-color: white;" class="c">
+            <nav style="padding: 5px;">
+                <a href="#" style="text-decoration: none;color: black;margin-left: 50px;">About Us</a>
+                <a href="#" style="margin-left: 230px;text-decoration: none;color: rgb(248, 114, 136);">Home</a>
+                <a href="#" style="margin-left: 30px;text-decoration: none;color: rgb(248, 114, 136);">About Us</a>
+                <a href="#" style="margin-left: 30px;text-decoration: none;color: rgb(248, 114, 136)">Projects</a>
+                <a href="#" style="margin-left: 30px; text-decoration: none;color: rgb(248, 114, 136);">Achievements</a>
+                <button class="button">Contact Us</button>
+                <!--<a href="#" style="margin-left: 195px;text-decoration: none;"><button style="background-color: rgb(247, 198, 206);
+                border-radius: 10px;padding: 4px 10px;">CONTACT US</button></a>-->
+            </nav>
+            <img src="web1.jpg" style="width: 1015px;height: 300px;"><br><br>
+            <center>
+                <h1 style="color: rgb(242, 109, 131);"><i>ABOUT OUR TEAM:</i></h1><br>
+                <hr style="width: 900px ; color: rgb(248, 170, 183);">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br>
+                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>
+                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in<br>
+                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat<br> 
+                      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p><hr style="width: 900px ; color: rgb(248, 170, 183);">
+                <br>
+                <img src="sign.png">
+                <br>
+            </center>
+            <div>
+                <center>
+                    <h1 style="color: rgb(245, 132, 151);"><i>OUR SERVICES</i> </h1>
+                </center>
+                <div class="box" style="margin-left: 65px;">
+                   <center> <img src="phone.jpeg" class="i"><br>
+                  Copywriter
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br>
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>
+                    laboris nisi ut aliquip ex ea commodo consequat. </p></center>
+                </div>
+                <div class="box">
+                    <center> <img src="phone.jpeg" class="i"><br>
+                    Mobile Dev
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br>
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>
+                        laboris nisi ut aliquip ex ea commodo consequat. </p></center>
+                </div>
+                <div class="box">
+                    <center> <img src="cam.png" class="i"><br>
+                    Management
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br>
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>
+                        laboris nisi ut aliquip ex ea commodo consequat. </p></center>
+                </div>
+                <br>
+                <br>
+                <div class="image-container">
+                    <img src="bg.jpeg" style="width: 1015px; height:350px">
+                    <div class="overlay-text">
+                       <center> 6<br></center>
+                       <p style="font-size: 20px;">Projects</p>
+                    </div>
+                    <div class="overlay-text">
+                        <center>7<br></center>
+                        <p style="font-size: 20px;"> Awards</p>
+                    </div>
+                    <div class="overlay-text">
+                        <center>7918<br></center>
+                        <p style="font-size: 20px;">Working hours</p>
+                    </div>
+                    <div class="overlay-text">
+                       <center> 56<br></center>
+                       <p style="font-size: 20px;">Hirings</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+        <br>
+        <br>
+        
+        
+    
+</body>
+</html>
