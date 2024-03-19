@@ -640,7 +640,8 @@ header.active .container{
     border-radius: 10px;
 }
 .portfolio-item-thumbnail img{
-    width: 100%;
+    width: 500px;
+    height: 450px;
     border-radius: 10px;
 }
 .portfolio-item h3{
@@ -704,6 +705,9 @@ header.active .container{
     position: absolute;
     right: -40px;
     top: -40px;
+}
+.pp-thumbnail{
+    text-align: center;
 }
 .pp-thumbnail img{
     border-radius: 10px;
